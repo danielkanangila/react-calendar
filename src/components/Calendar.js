@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Moment from "moment";
 import { extendMoment } from "moment-range";
 
@@ -18,6 +18,11 @@ const Calendar = ({
     allmonths: moment.months(),
     selectedDay: null
   });
+
+  useEffect(() => {
+    onChange(state.dateObject.format(format));
+  }, []); //eslint-disable-line
+
   const weekdayshort = moment.weekdaysShort();
 
   const daysInMonth = () => state.dateObject.daysInMonth();
