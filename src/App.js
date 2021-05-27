@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./styles.css";
 import Calendar from "./components/Calendar";
 import { ReactComponent as CalendarIcon } from "./assets/date_range_black_24dp.svg";
 
