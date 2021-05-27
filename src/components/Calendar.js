@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Moment from "moment";
 import { extendMoment } from "moment-range";
 
+import "./calendar.css";
+
 const moment = extendMoment(Moment);
 
 const Calendar = ({
